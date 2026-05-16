@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    @include('layout._cabecalho')
     <title>@yield('titulo')</title>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,3 +17,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
+
+@include('layout._rodape')

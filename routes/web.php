@@ -35,3 +35,27 @@ Route::get('/admin/cursos/excluir/{id}', [
     'as' =>'admin.cursos.excluir',
     'uses'=>'App\Http\Controllers\Admin\CursoController@excluir'
 ]);
+
+Route::get('/admin/cursos/adicionar', [
+    'as' => 'admin.cursos.adicionar',
+    'uses' => 'App\Http\Controllers\Admin\CursoController@adicionar'
+]);
+
+Route::post('/admin/cursos/salvar', [
+    'as' => 'admin.cursos.salvar',
+    'uses' => 'App\Http\Controllers\Admin\CursoController@salvar'
+]);
+
+Route::get('/admin/cursos/editar/{id}', [
+    'as' => 'admin.cursos.editar',
+    'uses' => 'App\Http\Controllers\Admin\CursoController@editar'
+]);
+
+Route::get('/admin/cursos/excluir/{id}', [
+    'as' => 'admin.cursos.excluir',
+    'uses' => 'App\Http\Controllers\Admin\CursoController@excluir'
+]);
+Route::put('/admin/cursos/atualizar/{id}', [
+    'as' => 'admin.cursos.atualizar',
+    'uses' => 'App\Http\Controllers\Admin\CursoController@atualizar'
+]);
