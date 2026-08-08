@@ -9,12 +9,10 @@ class Curso extends Model
 {
     use HasFactory;
 
-    
     protected $fillable = [
-        'titulo', 
-        'descricao', 
-        'valor', 
-        'imagem', 
-        'publicado'
+        'titulo',
+        'descricao',
+        'imagem',
+        'valor',
     ];
 }
